@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.header {
+    /* position: fixed; */
+    width: 100vw;
+}
+
+.flex {
+    display: flex;
+    background-color: chocolate;
+    height: 80px;
+    position: relative;
+
+
+}
+
+.logo {
+    margin: 15px 847px 24px 44px;
+    color: chocolate;
+    background-color: rgb(39, 4, 39);
+    padding: 8px;
+    border-radius: 40px;
+    font-size: 20px;
+    font-weight: 1000;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+
+}
+
+.navbar a {
+    margin: 20px 42px 40px 15px;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.home {
+
+    background: url("home-bg.jpg");
+    height: 800px;
+}
+
+.home_img img {
+    height: 40%;
+    width: 40%;
+    /* margin: 124px 231px; */
+    position: relative;
+    animation-name: slide;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slide {
+    0% {
+        left: 0;
+        top: 50px;
+    }
+
+    25% {
+        left: 50px;
+        top: 50px
+    }
+
+    50% {
+        left: 100px;
+        top: 50px;
+    }
+
+    75% {
+        left: 150px;
+        top: 50px;
+    }
+
+    100% {
+        left: 200px;
+        top: 50px;
+    }
+}
+
+h1 {
+    /* margin:-531px 422px 400px 844px; */
+    font-weight: 1000;
+    font-size: 50px;
+    font-family: 'Zeyada', cursive;
+    color: aliceblue;
+    position: relative;
+    animation-name: slidetext;
+    animation-duration: 3s;
+    animation-iteration-count: infinite
+}
+
+@keyframes slidetext {
+    0% {
+        left: 1200px;
+        top: -350px;
+    }
+
+    25% {
+        left: 1100px;
+        top: -350px
+    }
+
+    50% {
+        left: 1000px;
+        top: -350px;
+    }
+
+    75% {
+        left: 900px;
+        top: -350px;
+    }
+
+    100% {
+        left: 800px;
+        top: -350px;
+    }
+}
+
+
+.card {
+    height: 600px;
+    width: 400px;
+    background-color: rgb(16, 80, 135);
+    border: 2px solid rgb(0, 0, 0);
+    margin: 20px 20px;
+
+
+}
+
+.grid1 {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+.card a button {
+    color: aliceblue;
+    background-color: chocolate;
+    padding: 20px;
+    width: 350px;
+    margin: 40px 30px;
+    font-weight: 1000;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card a button:hover {
+    background-color: rgb(130, 56, 3);
+}
+
+p {
+    color: #ffff;
+    text-align: center;
+    font-size: medium;
+}
+
+.menu {
+    background-color: rgb(6, 39, 39);
+}
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: 1000;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.pizzabox {
+    height: 350px;
+    width: 350px;
+    border: solid white;
+    margin: 40px 20px;
+    background-color: white;
+
+    border-radius: 2px;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin-left: 60px;
+}
+
+.pizzabox img {
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    display: block;
+    /* object-position: center; */
+    /* text-align: center; */
+}
+
+.pizzabox a button {
+    height: 40px;
+    width: 200px;
+    font-size: 30px;
+    font-weight: 500;
+    background-color: chocolate;
+    color: #ffff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: auto;
+    display: block;
+    text-decoration: none;
+    margin: -60px 73px;
+}
+
+.pizzabox a button:hover {
+    background-color: rgb(143, 62, 3);
+}
+
+.pizzabox a {
+    text-decoration: none;
+}
+
+.qty {
+    height: 30px;
+    width: 45px;
+    margin: 20px 20px;
+    padding: 5px;
+    cursor: pointer;
+
+
+}
+
+.footer {
+    background-color: rgb(255, 255, 255);
+}
+
+.box {
+    height: 300px;
+    width: 230px;
+    background-color: rgba(107, 107, 106, 0.539);
+    margin: 200px 100px 30px 130px;
+    text-align: center;
+    color: #fbf9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+.credit {
+    text-align: center;
+}
+@media (max-width:300px) {
+
+.home{
+
+}
+.aboutus{
+
+}
+.menu{
+
+}
+.footer{
+
+}
+
+}
+@media (min-width:300px) and (max-width:800px){
+
+    .home{
+    
+    }
+    .aboutus{
+    
+    }
+    .menu{
+    
+    }
+    .footer{
+        
+    }
+    
+    }
+    @media (min-width:800px) and (max-width:1200px){
+
+        .home{
+        height: 300px;
+        }
+        .aboutus{
+        
+        }
+        .menu{
+        
+        }
+        .footer{
+            
+        }
+        
+        }
